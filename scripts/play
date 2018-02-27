@@ -1,0 +1,3 @@
+#!/bin/bash
+ansible-playbook -i /test/hosts -l all /Sucess/Experiments/virtuals.yaml
+

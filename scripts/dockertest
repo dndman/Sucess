@@ -1,0 +1,3 @@
+#!/bin/bash
+docker run -it -v /playbooks/hosts:/test/hosts 7b57b0e3b315
+
