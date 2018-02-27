@@ -1,0 +1,18 @@
+---
+- hosts: victims
+  become: yes
+  become_method: sudo
+  become_user: root
+  tasks:
+   - name: update system
+     shell: apt update; apt -y upgrade
+
+   - name: ping
+     shell: ping -c 4 8.8.8.8
+
+   - name: echo
+     shell: wall ХАОС ЗОВЕТ
+
+
+
+
